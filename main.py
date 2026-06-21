@@ -11,9 +11,9 @@ import re
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"使用デバイス: {device}")
 
-context_length = 10
+context_length = 40
 embedding_dim = 64
-hidden_dim = 128
+hidden_dim = 512
 batch_size = 512  # 大量データでもVRAMを溢れさせないためのバッチサイズ
 
 # ==========================================
